@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Rentals - Penguin Asia</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="shortcut icon" href="img/penguin.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
+    <!-- Add Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <!-- Add Lightbox CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet" />
+    <style>
+        /* Hide scrollbar for Chrome, Safari and Opera */
+        .scrollbar-hide::-webkit-scrollbar {
+            display: none;
+        }
+        
+        /* Hide scrollbar for IE, Edge and Firefox */
+        .scrollbar-hide {
+            -ms-overflow-style: none;  /* IE and Edge */
+            scrollbar-width: none;  /* Firefox */
+        }
+    </style>
+</head>
+
+<body class="font-sans">
+    <header>
+        <nav class="fixed top-0 w-full bg-white shadow-sm z-50">
+            <div class="container mx-auto px-6 py-3">
+                <div class="flex justify-between items-center">
+                    <a href="index.html" class="flex items-center space-x-3">
+                        <img src="img/penguin.png" alt="Penguin Asia Logo" class="w-14 h-14">
+                        <div>
+                            <h1 class="text-lg font-bold text-gray-900">Penguin Asia</h1>
+                            <p class="text-xs text-gray-500 italic">We Make it Happen.</p>
+                        </div>
+                    </a>
+
+                    <div class="hidden lg:flex items-center justify-center space-x-8">
+                        <a href="index.html"
+                            class="flex items-center space-x-1 text-gray-700 hover:text-[#D99D43] font-medium">
+                            <span class="text-sm font-medium">Home</span>
+                        </a>
+                        <div class="relative group">
+                            <a href="services.html"
+                                class="flex items-center space-x-1 text-gray-700 hover:text-[#D99D43] transition-colors duration-300">
+                                <span class="text-sm font-medium">Services</span>
+                                <i class="fas fa-chevron-down text-xs"></i>
+                            </a>
+                            <div
+                                class="absolute top-full left-1/2 -translate-x-1/2 mt-2 w-[500px] bg-white rounded-lg shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300">
+                                <div class="p-5 grid grid-cols-2 gap-6">
+                                    <div>
+                                        <h3 class="text-xs font-semibold text-gray-400 uppercase tracking-wider mb-3">
+                                            Business Services</h3>
+                                        <div class="space-y-2">
+                                            <a href="services.html#construction-services"
+                                                class="flex items-center space-x-3 p-2 hover:bg-gray-50 rounded-md group">
+                                                <i
+                                                    class="fas fa-hard-hat text-[#D99D43] group-hover:text-[#c48b3c]"></i>
+                                                <div>
+                                                    <span
+                                                        class="block text-sm font-medium text-gray-900">Construction</span>
+                                                    <span class="block text-xs text-gray-500">Professional construction
+                                                        services</span>
+                                                </div>
+                                            </a>
+                                            <a href="services.html#property-management"
+                                                class="flex items-center space-x-3 p-2 hover:bg-gray-50 rounded-md group">
+                                                <i
+                                                    class="fas fa-building text-[#D99D43] group-hover:text-[#c48b3c]"></i>
+                                                <div>
+                                                    <span class="block text-sm font-medium text-gray-900">Property
+                                                        Management</span>
+                                                    <span class="block text-xs text-gray-500">Complete property
+                                                        solutions</span>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <h3 class="text-xs font-semibold text-gray-400 uppercase tracking-wider mb-3">
+                                            Specialized Services</h3>
+                                        <div class="space-y-2">
+                                            <a href="services.html#automotive-services"
+                                                class="flex items-center space-x-3 p-2 hover:bg-gray-50 rounded-md group">
+                                                <i class="fas fa-car text-[#D99D43] group-hover:text-[#c48b3c]"></i>
+                                                <div>
+                                                    <span
+                                                        class="block text-sm font-medium text-gray-900">Automotive</span>
+                                                    <span class="block text-xs text-gray-500">Vehicle services &
+                                                        solutions</span>
+                                                </div>
+                                            </a>
+                                            <a href="services.html#equipment-solutions"
+                                                class="flex items-center space-x-3 p-2 hover:bg-gray-50 rounded-md group">
+                                                <i
+                                                    class="fas fa-truck-monster text-[#D99D43] group-hover:text-[#c48b3c]"></i>
+                                                <div>
+                                                    <span
+                                                        class="block text-sm font-medium text-gray-900">Equipment</span>
+                                                    <span class="block text-xs text-gray-500">Heavy machinery &
+                                                        tools</span>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="relative group">
+                            <a href="rentals.html" class="flex items-center space-x-1 text-[#D99D43] font-medium">
+                                <span class="text-sm font-medium">Rentals</span>
+                                <i class="fas fa-chevron-down text-xs"></i>
+                            </a>
+                            <div
+                                class="absolute top-full left-1/2 -translate-x-1/2 mt-2 w-[280px] bg-white rounded-lg shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300">
+                                <div class="p-4">
+                                    <h3 class="text-xs font-semibold text-gray-400 uppercase tracking-wider mb-3">
+                                        Available Fleet</h3>
+                                    <div class="space-y-2">
+                                        <a href="#premium-vehicles"
+                                            class="flex items-center space-x-3 p-2 hover:bg-gray-50 rounded-md group">
+                                            <i class="fas fa-car-side text-[#D99D43] group-hover:text-[#c48b3c]"></i>
+                                            <div>
+                                                <span class="block text-sm font-medium text-gray-900">Bridal
+                                                    Vehicles</span>
+                                                <span class="block text-xs text-gray-500">Premium cars</span>
+                                            </div>
+                                        </a>
+                                        <a href="#heavy-equipment"
+                                            class="flex items-center space-x-3 p-2 hover:bg-gray-50 rounded-md group">
+                                            <i class="fas fa-truck text-[#D99D43] group-hover:text-[#c48b3c]"></i>
+                                            <div>
+                                                <span class="block text-sm font-medium text-gray-900">Heavy Equipment
+                                                    Rentals</span>
+                                                <span class="block text-xs text-gray-500">Heavy Equipment</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <a href="about.html"
+                            class="text-sm font-medium text-gray-700 hover:text-[#D99D43] transition-colors duration-300">About</a>
+                    </div>
+
+                    <div class="flex items-center space-x-6">
+                        <div class="relative">
+                            <div id="searchContainer" class="flex items-center bg-gray-50 rounded-md">
+                                <input type="text" id="searchInput"
+                                    class="w-0 px-0 opacity-0 transition-all duration-300 focus:outline-none text-sm bg-transparent"
+                                    placeholder="Search...">
+                                <button id="searchBtn"
+                                    class="p-2 text-gray-500 hover:text-[#D99D43] transition-colors duration-300">
+                                    <i class="fas fa-search text-sm"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                        <a href="contact.html"
+                            class="hidden md:block px-4 py-2 text-sm font-medium text-white bg-[#D99D43] hover:bg-[#c48b3c] rounded-md transition-colors duration-300">
+                            Get in Touch
+                        </a>
+
+                        <button class="lg:hidden text-gray-700 hover:text-[#D99D43]">
+                            <i class="fas fa-bars"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section with Dynamic Background -->
+        <section
+            class="relative min-h-screen pt-32 overflow-hidden bg-gradient-to-b from-gray-900 via-gray-800 to-gray-900">
+            <!-- Animated background elements -->
+            <div class="absolute inset-0 overflow-hidden">
+                <div
+                    class="absolute w-[800px] h-[800px] -top-1/2 -right-1/4 bg-gradient-to-br from-[#D99D43]/20 to-transparent rounded-full blur-3xl animate-pulse">
+                </div>
+                <div
+                    class="absolute w-[600px] h-[600px] top-1/2 -left-1/4 bg-gradient-to-tr from-[#D99D43]/10 to-transparent rounded-full blur-2xl animate-float-slow">
+                </div>
+                <div
+                    class="absolute w-[400px] h-[400px] -bottom-1/4 right-0 bg-gradient-to-tl from-[#D99D43]/15 to-transparent rounded-full blur-xl animate-float">
+                </div>
+            </div>
+
+            <div class="container mx-auto px-6 relative">
+                <div class="max-w-4xl mx-auto text-center" id="premium-vehicles">
+                    <span
+                        class="inline-block px-4 py-1 bg-[#D99D43]/10 rounded-full text-[#D99D43] text-sm font-medium mb-6">
+                        Premium Rentals
+                    </span>
+                    <h1 class="text-5xl md:text-7xl font-bold text-white mb-8 leading-tight">
+                        Experience Luxury &
+                        <span class="relative inline-block">
+                            Power
+                            <div class="absolute -bottom-2 left-0 w-full">
+                                <svg class="w-full" height="12" viewBox="0 0 100 12" preserveAspectRatio="none">
+                                    <path d="M0 6 Q 25 0, 50 6 Q 75 12, 100 6" stroke="#D99D43" stroke-width="3"
+                                        fill="none" class="animate-pulse" />
+                                </svg>
+                            </div>
+                        </span>
+                    </h1>
+                    <p class="text-xl text-gray-300 mb-12 leading-relaxed">
+                        Discover our exclusive collection of premium vehicles and heavy equipment available for rent.
+                    </p>
+                </div>
+
+                <section class="py-20 bg-white" id="bridal-cars">
+                    <div class="container mx-auto px-6">
+                        <div class="relative mb-16 text-center">
+                            <h2 class="text-4xl md:text-5xl font-bold text-gray-900 relative">Bridal Car Collection</h2>
+                            <p class="text-gray-600 mt-4">Make your special day even more memorable</p>
+                        </div>
+
+                        <!-- Horizontal Scrolling Gallery -->
+                        <div class="relative">
+                            <div id="carousel" class="flex overflow-x-auto gap-6 pb-8 snap-x snap-mandatory scrollbar-hide">
+                                <!-- Bridal Car 1 -->
+                                <div class="flex-none w-[300px] md:w-[400px] group relative">
+                                    <div class="relative aspect-[4/3] rounded-xl overflow-hidden">
+                                        <img src="img/bmw1.webp" alt="BMW Wedding Car"
+                                            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                                        <div
+                                            class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                            <div class="absolute bottom-0 left-0 right-0 p-6">
+                                                <h3 class="text-white text-xl font-semibold">BMW 7 Series</h3>
+                                                <p class="text-gray-200">Premium Wedding Package</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Bridal Car 2 -->
+                                <div class="flex-none w-[300px] md:w-[400px] group relative">
+                                    <div class="relative aspect-[4/3] rounded-xl overflow-hidden">
+                                        <img src="img/bmw2.webp" alt="BMW Wedding Car"
+                                            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                                        <div
+                                            class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                            <div class="absolute bottom-0 left-0 right-0 p-6">
+                                                <h3 class="text-white text-xl font-semibold">Mercedes S-Class</h3>
+                                                <p class="text-gray-200">Luxury Wedding Service</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="flex-none w-[300px] md:w-[400px] group relative">
+                                    <div class="relative aspect-[4/3] rounded-xl overflow-hidden">
+                                        <img src="img/bmw3.webp" alt="BMW Wedding Car"
+                                            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                                        <div
+                                            class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                            <div class="absolute bottom-0 left-0 right-0 p-6">
+                                                <h3 class="text-white text-xl font-semibold">Mercedes S-Class</h3>
+                                                <p class="text-gray-200">Luxury Wedding Service</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="flex-none w-[300px] md:w-[400px] group relative">
+                                    <div class="relative aspect-[4/3] rounded-xl overflow-hidden">
+                                        <img src="img/bmw4.webp" alt="BMW Wedding Car"
+                                            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                                        <div
+                                            class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                            <div class="absolute bottom-0 left-0 right-0 p-6">
+                                                <h3 class="text-white text-xl font-semibold">Mercedes S-Class</h3>
+                                                <p class="text-gray-200">Luxury Wedding Service</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="flex-none w-[300px] md:w-[400px] group relative">
+                                    <div class="relative aspect-[4/3] rounded-xl overflow-hidden">
+                                        <img src="img/bmw5.webp" alt="BMW Wedding Car"
+                                            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                                        <div
+                                            class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                            <div class="absolute bottom-0 left-0 right-0 p-6">
+                                                <h3 class="text-white text-xl font-semibold">Mercedes S-Class</h3>
+                                                <p class="text-gray-200">Luxury Wedding Service</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="flex-none w-[300px] md:w-[400px] group relative">
+                                    <div class="relative aspect-[4/3] rounded-xl overflow-hidden">
+                                        <img src="img/bmw6.webp" alt="BMW Wedding Car"
+                                            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                                        <div
+                                            class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                            <div class="absolute bottom-0 left-0 right-0 p-6">
+                                                <h3 class="text-white text-xl font-semibold">Mercedes S-Class</h3>
+                                                <p class="text-gray-200">Luxury Wedding Service</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="flex-none w-[300px] md:w-[400px] group relative">
+                                    <div class="relative aspect-[4/3] rounded-xl overflow-hidden">
+                                        <img src="img/bmw7.webp" alt="BMW Wedding Car"
+                                            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                                        <div
+                                            class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                            <div class="absolute bottom-0 left-0 right-0 p-6">
+                                                <h3 class="text-white text-xl font-semibold">Mercedes S-Class</h3>
+                                                <p class="text-gray-200">Luxury Wedding Service</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="flex-none w-[300px] md:w-[400px] group relative">
+                                    <div class="relative aspect-[4/3] rounded-xl overflow-hidden">
+                                        <img src="img/bmw8.webp" alt="BMW Wedding Car"
+                                            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                                        <div
+                                            class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                            <div class="absolute bottom-0 left-0 right-0 p-6">
+                                                <h3 class="text-white text-xl font-semibold">Mercedes S-Class</h3>
+                                                <p class="text-gray-200">Luxury Wedding Service</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="flex-none w-[300px] md:w-[400px] group relative">
+                                    <div class="relative aspect-[4/3] rounded-xl overflow-hidden">
+                                        <img src="img/bmw9.webp" alt="BMW Wedding Car"
+                                            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                                        <div
+                                            class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                            <div class="absolute bottom-0 left-0 right-0 p-6">
+                                                <h3 class="text-white text-xl font-semibold">Mercedes S-Class</h3>
+                                                <p class="text-gray-200">Luxury Wedding Service</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="flex-none w-[300px] md:w-[400px] group relative">
+                                    <div class="relative aspect-[4/3] rounded-xl overflow-hidden">
+                                        <img src="img/bmw10.webp" alt="BMW Wedding Car"
+                                            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                                        <div
+                                            class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                            <div class="absolute bottom-0 left-0 right-0 p-6">
+                                                <h3 class="text-white text-xl font-semibold">Mercedes S-Class</h3>
+                                                <p class="text-gray-200">Luxury Wedding Service</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Navigation Controls -->
+                            <button id="prev"
+                                class="absolute top-1/2 left-4 transform -translate-y-1/2 bg-black/50 hover:bg-black/70 text-white w-10 h-10 rounded-full flex items-center justify-center transition-colors duration-300">
+                                <i class="fas fa-chevron-left"></i>
+                            </button>
+                            <button id="next"
+                                class="absolute top-1/2 right-4 transform -translate-y-1/2 bg-black/50 hover:bg-black/70 text-white w-10 h-10 rounded-full flex items-center justify-center transition-colors duration-300">
+                                <i class="fas fa-chevron-right"></i>
+                            </button>
+
+                            <!-- Indicators -->
+                            <div class="absolute left-0 bottom-4 w-full flex justify-center pt-32 gap-2">
+                                <button data-slide="0" class="w-3 h-3 bg-[#D99D43] rounded-full"></button>
+                                <button data-slide="1" class="w-3 h-3 bg-gray-200 rounded-full"></button>
+                                <button data-slide="2" class="w-3 h-3 bg-gray-200 rounded-full"></button>
+                                <button data-slide="3" class="w-3 h-3 bg-gray-200 rounded-full"></button>
+                                <button data-slide="4" class="w-3 h-3 bg-gray-200 rounded-full"></button>
+                                <button data-slide="5" class="w-3 h-3 bg-gray-200 rounded-full"></button>
+                                <button data-slide="6" class="w-3 h-3 bg-gray-200 rounded-full"></button>
+                                <button data-slide="7" class="w-3 h-3 bg-gray-200 rounded-full"></button>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </section>
+
+        <!-- Bridal Cars Gallery Section -->
+
+
+        <!-- Heavy Equipment Gallery Section -->
+        <section class="py-20 bg-gray-900" id="heavy-equipment">
+            <div class="container mx-auto px-6">
+                <div class="relative mb-16 text-center">
+                    <div class="flex justify-center mb-6">
+                        <div class="relative w-20 h-20">
+                            <div class="absolute inset-0 bg-[#D99D43]/20 rounded-full animate-ping"></div>
+                            <div
+                                class="relative w-full h-full bg-[#D99D43] rounded-full flex items-center justify-center">
+                                <i class="fas fa-truck-monster text-3xl text-white"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <h2 class="text-4xl md:text-5xl font-bold text-white">Heavy Equipment Fleet</h2>
+                    <p class="text-gray-400 mt-4">Professional grade machinery for your projects</p>
+                </div>
+
+                <!-- Equipment Grid Gallery -->
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Equipment 1 -->
+                    <div class="group relative aspect-video">
+                        <div class="relative h-full rounded-xl overflow-hidden">
+                            <img src="img/excavator.jpeg" alt="20-Ton Excavator"
+                                class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                            <div
+                                class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                <div class="absolute bottom-0 left-0 right-0 p-6">
+                                    <h3 class="text-white text-xl font-semibold">Excavator 1</h3>
+                                    <div class="flex items-center mt-2 text-gray-200">
+                                        <i class="fas fa-check-circle mr-2 text-[#D99D43]"></i>
+                                        <span>Available for immediate rental</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Equipment 2 -->
+                    <div class="group relative aspect-video">
+                        <div class="relative h-full rounded-xl overflow-hidden">
+                            <img src="img/excavator2.avif" alt="30-Ton Excavator"
+                                class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                            <div
+                                class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                <div class="absolute bottom-0 left-0 right-0 p-6">
+                                    <h3 class="text-white text-xl font-semibold">Excavator 2</h3>
+                                    <div class="flex items-center mt-2 text-gray-200">
+                                        <i class="fas fa-check-circle mr-2 text-[#D99D43]"></i>
+                                        <span>Includes operator</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="group relative aspect-video">
+                        <div class="relative h-full rounded-xl overflow-hidden">
+                            <img src="img/excavator3.avif" alt="30-Ton Excavator"
+                                class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                            <div
+                                class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                <div class="absolute bottom-0 left-0 right-0 p-6">
+                                    <h3 class="text-white text-xl font-semibold">Excavator 3</h3>
+                                    <div class="flex items-center mt-2 text-gray-200">
+                                        <i class="fas fa-check-circle mr-2 text-[#D99D43]"></i>
+                                        <span>Heavy Duty</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Fullscreen Gallery Modal -->
+        <div id="galleryModal" class="fixed inset-0 bg-black/95 z-50 hidden">
+            <div class="absolute inset-0 flex items-center justify-center">
+                <!-- Main Image -->
+                <div class="relative w-full max-w-7xl mx-auto px-4">
+                    <img id="mainImage" src="" alt="" class="w-full h-[80vh] object-contain">
+
+                    <!-- Navigation Arrows -->
+                    <button onclick="prevImage()"
+                        class="absolute left-4 top-1/2 -translate-y-1/2 w-12 h-12 bg-white/10 hover:bg-white/20 rounded-full flex items-center justify-center text-white transition-colors duration-300">
+                        <i class="fas fa-chevron-left text-xl"></i>
+                    </button>
+                    <button onclick="nextImage()"
+                        class="absolute right-4 top-1/2 -translate-y-1/2 w-12 h-12 bg-white/10 hover:bg-white/20 rounded-full flex items-center justify-center text-white transition-colors duration-300">
+                        <i class="fas fa-chevron-right text-xl"></i>
+                    </button>
+
+                    <!-- Close Button -->
+                    <button onclick="closeGallery()"
+                        class="absolute top-4 right-4 w-10 h-10 bg-white/10 hover:bg-white/20 rounded-full flex items-center justify-center text-white transition-colors duration-300">
+                        <i class="fas fa-times"></i>
+                    </button>
+
+                    <!-- Image Counter -->
+                    <div
+                        class="absolute bottom-4 left-1/2 -translate-x-1/2 bg-black/50 backdrop-blur-sm rounded-full px-4 py-2 text-white text-sm">
+                        <span id="imageCounter">1 / 10</span>
+                    </div>
+                </div>
+
+                <!-- Thumbnail Strip -->
+                <div class="absolute bottom-8 left-0 right-0">
+                    <div class="flex justify-center items-center gap-2 px-4 overflow-x-auto scrollbar-hide">
+                        <!-- Thumbnails will be dynamically added here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="text-center max-w-3xl mx-auto">
+                    <h2 class="text-3xl font-bold text-gray-900 mb-6">Request a Quote</h2>
+                    <p class="text-gray-600 mb-8">Contact us to discuss your rental needs and get a customized quote.
+                    </p>
+                    <a href="#contact"
+                        class="inline-block px-8 py-4 bg-[#D99D43] text-white rounded-lg hover:bg-[#c48b3c] transition-colors duration-300">
+                        Get Quote Now
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <section class="relative py-24 bg-gray-900">
+        <!-- Subtle background pattern -->
+        <div class="absolute inset-0 opacity-5">
+            <div class="absolute inset-0"
+                style="background-image: radial-gradient(#D99D43 0.5px, transparent 0.5px); background-size: 24px 24px;">
+            </div>
+        </div>
+
+        <div class="container mx-auto px-6 relative">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+                <!-- Company Info -->
+                <div>
+                    <div class="flex items-center space-x-3 mb-6">
+                        <img src="img/penguin.png" alt="Penguin Asia Logo" class="w-10 h-10 brightness-0 invert">
+                        <div>
+                            <h3 class="text-lg font-bold text-white">Penguin Asia</h3>
+                            <p class="text-xs text-gray-400 italic">We Make it Happen.</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-400 text-sm leading-relaxed">
+                        Your trusted partner for comprehensive business solutions across Asia. Excellence in automotive,
+                        equipment, and property services.
+                    </p>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="grid grid-cols-2 gap-8">
+                    <div>
+                        <h4 class="text-white font-medium mb-4">Services</h4>
+                        <ul class="space-y-2">
+                            <li><a href="#automotive"
+                                    class="text-gray-400 hover:text-[#D99D43] text-sm transition-colors duration-300">Automotive</a>
+                            </li>
+                            <li><a href="#equipment"
+                                    class="text-gray-400 hover:text-[#D99D43] text-sm transition-colors duration-300">Equipment</a>
+                            </li>
+                            <li><a href="#property"
+                                    class="text-gray-400 hover:text-[#D99D43] text-sm transition-colors duration-300">Property</a>
+                            </li>
+                            <li><a href="#construction"
+                                    class="text-gray-400 hover:text-[#D99D43] text-sm transition-colors duration-300">Construction</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="text-white font-medium mb-4">Company</h4>
+                        <ul class="space-y-2">
+                            <li><a href="#about"
+                                    class="text-gray-400 hover:text-[#D99D43] text-sm transition-colors duration-300">About</a>
+                            </li>
+                            <li><a href="#contact"
+                                    class="text-gray-400 hover:text-[#D99D43] text-sm transition-colors duration-300">Contact</a>
+                            </li>
+                            <li><a href="#careers"
+                                    class="text-gray-400 hover:text-[#D99D43] text-sm transition-colors duration-300">Careers</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Contact Info -->
+                <div>
+                    <h4 class="text-white font-medium mb-4">Get in Touch</h4>
+                    <div class="space-y-3">
+                        <a href="tel:+1234567890"
+                            class="flex items-center text-gray-400 hover:text-[#D99D43] text-sm transition-colors duration-300">
+                            <i class="fas fa-phone-alt w-5"></i>
+                            <span>+123 456 7890</span>
+                        </a>
+                        <a href="mailto:info@penguinasia.com"
+                            class="flex items-center text-gray-400 hover:text-[#D99D43] text-sm transition-colors duration-300">
+                            <i class="fas fa-envelope w-5"></i>
+                            <span>info@penguinasia.com</span>
+                        </a>
+                        <p class="flex items-start text-gray-400 text-sm">
+                            <i class="fas fa-map-marker-alt w-5 mt-1"></i>
+                            <span>123 Business Avenue, Asia Square<br>Singapore 123456</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bottom Bar -->
+            <div class="mt-16 pt-8 border-t border-gray-800">
+                <div class="flex flex-col md:flex-row justify-between items-center">
+                    <p class="text-gray-400 text-sm">© 2024 Penguin Asia. All rights reserved.</p>
+                    <div class="flex items-center space-x-4 mt-4 md:mt-0">
+                        <a href="#" class="text-gray-400 hover:text-[#D99D43] transition-colors duration-300">
+                            <i class="fab fa-linkedin text-lg"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-[#D99D43] transition-colors duration-300">
+                            <i class="fab fa-facebook text-lg"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-[#D99D43] transition-colors duration-300">
+                            <i class="fab fa-instagram text-lg"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const carousel = document.getElementById("carousel");
+            const prevButton = document.getElementById("prev");
+            const nextButton = document.getElementById("next");
+            const indicators = document.querySelectorAll("[data-slide]");
+            const itemWidth = 400; // Width of each carousel item including gap
+            const visibleItems = Math.floor(carousel.offsetWidth / itemWidth);
+            let currentIndex = 0;
+            
+            function updateCarousel() {
+                const scrollAmount = currentIndex * itemWidth;
+                carousel.scrollTo({
+                    left: scrollAmount,
+                    behavior: "smooth"
+                });
+                
+                // Update indicators
+                indicators.forEach((indicator, index) => {
+                    indicator.classList.toggle("bg-[#D99D43]", index === currentIndex);
+                    indicator.classList.toggle("bg-gray-200", index !== currentIndex);
+                });
+            }
+            
+            nextButton.addEventListener("click", () => {
+                const maxIndex = carousel.children.length - visibleItems;
+                currentIndex = Math.min(currentIndex + 1, maxIndex);
+                updateCarousel();
+            });
+            
+            prevButton.addEventListener("click", () => {
+                currentIndex = Math.max(currentIndex - 1, 0);
+                updateCarousel();
+            });
+            
+            indicators.forEach((indicator, index) => {
+                indicator.addEventListener("click", () => {
+                    currentIndex = index;
+                    updateCarousel();
+                });
+            });
+            
+            // Update carousel on window resize
+            window.addEventListener('resize', () => {
+                const newVisibleItems = Math.floor(carousel.offsetWidth / itemWidth);
+                if (newVisibleItems !== visibleItems) {
+                    currentIndex = 0;
+                    updateCarousel();
+                }
+            });
+            
+            // Initial update
+            updateCarousel();
+        });
+    </script>
+</body>
+
+</html>

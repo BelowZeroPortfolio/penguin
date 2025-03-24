@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Penguin Asia</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="shortcut icon" href="img/penguin.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
+</head>
+
+<body class="font-sans">
+    <header>
+        <nav class="fixed top-0 w-full bg-white shadow-sm z-50">
+            <div class="container mx-auto px-6 py-3">
+                <div class="flex justify-between items-center">
+                    <a href="index.html" class="flex items-center space-x-3">
+                        <img src="img/penguin.png" alt="Penguin Asia Logo" class="w-14 h-14">
+                        <div>
+                            <h1 class="text-lg font-bold text-gray-900">Penguin Asia</h1>
+                            <p class="text-xs text-gray-500  italic">We Make it Happen.</p>
+                        </div>
+                    </a>
+
+                    <div class="hidden lg:flex items-center justify-center space-x-8">
+                        <a href="index.html" class="flex items-center space-x-1 text-gray-700 hover:text-[#D99D43] font-medium">
+                            <span class="text-sm font-medium">Home</span>
+                        </a>
+                        <div class="relative group">
+                            <a href="services.html" class="flex items-center space-x-1 text-gray-700 hover:text-[#D99D43] transition-colors duration-300">
+                                <span class="text-sm font-medium">Services</span>
+                                <i class="fas fa-chevron-down text-xs"></i>
+                            </a>
+                            <div class="absolute top-full left-1/2 -translate-x-1/2 mt-2 w-[500px] bg-white rounded-lg shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300">
+                                <div class="p-5 grid grid-cols-2 gap-6">
+                                    <div>
+                                        <h3 class="text-xs font-semibold text-gray-400 uppercase tracking-wider mb-3">Business Services</h3>
+                                        <div class="space-y-2">
+                                            <a href="services.html#construction-services" class="flex items-center space-x-3 p-2 hover:bg-gray-50 rounded-md group">
+                                                <i class="fas fa-hard-hat text-[#D99D43] group-hover:text-[#c48b3c]"></i>
+                                                <div>
+                                                    <span class="block text-sm font-medium text-gray-900">Construction</span>
+                                                    <span class="block text-xs text-gray-500">Professional construction services</span>
+                                                </div>
+                                            </a>
+                                            <a href="services.html#property-management" class="flex items-center space-x-3 p-2 hover:bg-gray-50 rounded-md group">
+                                                <i class="fas fa-building text-[#D99D43] group-hover:text-[#c48b3c]"></i>
+                                                <div>
+                                                    <span class="block text-sm font-medium text-gray-900">Property Management</span>
+                                                    <span class="block text-xs text-gray-500">Complete property solutions</span>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <h3 class="text-xs font-semibold text-gray-400 uppercase tracking-wider mb-3">Specialized Services</h3>
+                                        <div class="space-y-2">
+                                            <a href="services.html#automotive-services" class="flex items-center space-x-3 p-2 hover:bg-gray-50 rounded-md group">
+                                                <i class="fas fa-car text-[#D99D43] group-hover:text-[#c48b3c]"></i>
+                                                <div>
+                                                    <span class="block text-sm font-medium text-gray-900">Automotive</span>
+                                                    <span class="block text-xs text-gray-500">Vehicle services & solutions</span>
+                                                </div>
+                                            </a>
+                                            <a href="services.html#equipment-solutions" class="flex items-center space-x-3 p-2 hover:bg-gray-50 rounded-md group">
+                                                <i class="fas fa-truck-monster text-[#D99D43] group-hover:text-[#c48b3c]"></i>
+                                                <div>
+                                                    <span class="block text-sm font-medium text-gray-900">Equipment</span>
+                                                    <span class="block text-xs text-gray-500">Heavy machinery & tools</span>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="relative group">
+                            <a href="rentals.html" class="flex items-center space-x-1 text-gray-700 hover:text-[#D99D43] transition-colors duration-300">
+                                <span class="text-sm font-medium">Rentals</span>
+                                <i class="fas fa-chevron-down text-xs"></i>
+                            </a>
+                            <div class="absolute top-full left-1/2 -translate-x-1/2 mt-2 w-[280px] bg-white rounded-lg shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300">
+                                <div class="p-4">
+                                    <h3 class="text-xs font-semibold text-gray-400 uppercase tracking-wider mb-3">Available Fleet</h3>
+                                    <div class="space-y-2">
+                                        <a href="#premium-vehicles" class="flex items-center space-x-3 p-2 hover:bg-gray-50 rounded-md group">
+                                            <i class="fas fa-car-side text-[#D99D43] group-hover:text-[#c48b3c]"></i>
+                                            <div>
+                                                <span class="block text-sm font-medium text-gray-900">Bridal Vechicles</span>
+                                                <span class="block text-xs text-gray-500">Premuim cars</span>
+                                            </div>
+                                        </a>
+                                        <a href="#heavy-equipment" class="flex items-center space-x-3 p-2 hover:bg-gray-50 rounded-md group">
+                                            <i class="fas fa-truck text-[#D99D43] group-hover:text-[#c48b3c]"></i>
+                                            <div>
+                                                <span class="block text-sm font-medium text-gray-900">Heavy Equipment Rentals</span>
+                                                <span class="block text-xs text-gray-500">Heavy Equipment</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <a href="about.html" class="text-sm font-medium text-gray-700 hover:text-[#D99D43] transition-colors duration-300">About</a>
+                    </div>
+
+                    <div class="flex items-center space-x-6">
+                        <div class="relative">
+                            <div id="searchContainer" class="flex items-center bg-gray-50 rounded-md">
+                                <input type="text" 
+                                    id="searchInput"
+                                    class="w-0 px-0 opacity-0 transition-all duration-300 focus:outline-none text-sm bg-transparent"
+                                    placeholder="Search...">
+                                <button id="searchBtn" class="p-2 text-gray-500 hover:text-[#D99D43] transition-colors duration-300">
+                                    <i class="fas fa-search text-sm"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                        <a href="contact.html" class="hidden md:block px-4 py-2 text-sm font-medium text-white bg-[#D99D43] hover:bg-[#c48b3c] rounded-md transition-colors duration-300">
+                            Get in Touch
+                        </a>
+                        
+                        <button class="lg:hidden text-gray-700 hover:text-[#D99D43]">
+                            <i class="fas fa-bars"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="relative min-h-screen bg-white pt-24">
+            <div class="absolute inset-0 overflow-hidden pointer-events-none">
+                <!-- Background Elements -->
+                <div class="absolute top-20 left-10 w-64 h-64 bg-[#D99D43]/10 rounded-full opacity-20 blur-2xl animate-pulse"></div>
+                <div class="absolute bottom-20 right-10 w-96 h-96 bg-gray-50 rounded-full opacity-30 blur-3xl"></div>
+                
+                <!-- Animated Grid Pattern -->
+                <div class="absolute inset-0 bg-gradient-to-b from-gray-50/5 to-transparent opacity-20"
+                     style="background-image: linear-gradient(#f0f0f0 1px, transparent 1px),
+                            linear-gradient(to right, #f0f0f0 1px, transparent 1px);
+                            background-size: 40px 40px;">
+                </div>
+
+                <!-- Floating Elements -->
+                <div class="hidden lg:block">
+                    <!-- Tech Circles -->
+                    <div class="absolute top-32 right-24 animate-float-slow">
+                        <div class="w-20 h-20 rounded-full border-2 border-dashed border-[#D99D43]/30 rotate-45 flex items-center justify-center">
+                            <div class="w-16 h-16 rounded-full border-2 border-[#D99D43]/20"></div>
+                        </div>
+                    </div>
+                    
+                    <!-- Abstract Lines -->
+                    <div class="absolute bottom-40 left-20">
+                        <div class="w-16 h-16 border-l-2 border-t-2 border-[#D99D43]/20 rotate-12 animate-pulse"></div>
+                    </div>
+                </div>
+
+                <!-- Sticky Note with Live Status -->
+                <div class="absolute top-20 right-5 md:right-10 transform rotate-6 hidden md:block scale-75 lg:scale-100 transition-transform">
+                    <div class="relative bg-yellow-100 p-4 rounded-lg shadow-md w-40 lg:w-48 hover:rotate-0 transition-transform duration-300">
+                        <div class="absolute -top-2 -right-2 w-4 h-4 bg-green-500 rounded-full animate-ping"></div>
+                        <div class="absolute -top-2 -right-2 w-4 h-4 bg-green-500 rounded-full"></div>
+                        <div class="text-sm text-gray-700 font-handwriting">
+                            <i class="fas fa-thumbtack text-red-400 mb-2"></i>
+                            <p class="leading-relaxed">Your trusted partner for all business solutions in Asia</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Quality Badge with Counter -->
+                <div class="absolute bottom-10 md:bottom-20 left-5 md:left-10 hidden md:block scale-75 lg:scale-100 transition-transform hover:scale-105">
+                    <div class="bg-white p-3 rounded-lg shadow-md flex items-center space-x-3 transform hover:-rotate-3 transition-all duration-300">
+                        <div class="w-8 h-8 bg-[#D99D43] rounded flex items-center justify-center">
+                            <i class="fas fa-check text-white"></i>
+                        </div>
+                        <div class="flex flex-col">
+                            <span class="text-sm text-gray-600 whitespace-nowrap">Quality Assured</span>
+                            <span class="text-xs text-[#D99D43]">500+ Projects</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Support Card with Live Chat -->
+                <div class="absolute top-32 md:top-40 left-5 md:left-20 hidden md:block scale-75 lg:scale-100 transition-transform hover:scale-105">
+                    <div class="relative bg-white p-4 rounded-lg shadow-md transform hover:rotate-2 transition-all duration-300">
+                        <div class="absolute -top-1 -right-1">
+                            <span class="flex h-3 w-3">
+                                <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
+                                <span class="relative inline-flex rounded-full h-3 w-3 bg-green-500"></span>
+                            </span>
+                        </div>
+                        <div class="flex items-center space-x-3 mb-2">
+                            <i class="far fa-clock text-[#D99D43]"></i>
+                            <span class="text-sm font-medium text-gray-700 whitespace-nowrap">24/7 Support</span>
+                        </div>
+                        <div class="bg-gray-50 rounded px-3 py-2">
+                            <p class="text-xs text-gray-500">Always ready to assist</p>
+                        </div>
+                        <div class="mt-2 text-xs text-[#D99D43] flex items-center">
+                            <i class="fas fa-circle text-[6px] mr-1"></i>
+                            <span>Live Chat Available</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Interactive Spinner -->
+                <div class="absolute top-1/2 -right-6 md:right-0 hidden md:block scale-75 lg:scale-100">
+                    <div class="bg-white p-3 rounded-full shadow-lg hover:shadow-xl transition-shadow group cursor-pointer">
+                        <div class="relative w-12 h-12">
+                            <div class="absolute inset-0 rounded-full border-4 border-[#D99D43]/20"></div>
+                            <div class="absolute inset-0 rounded-full border-4 border-[#D99D43] border-t-transparent animate-spin"></div>
+                            <div class="absolute inset-0 flex items-center justify-center text-[#D99D43] opacity-0 group-hover:opacity-100 transition-opacity">
+                                <i class="fas fa-check text-sm"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Floating Icons with Trails -->
+                <div class="hidden lg:block">
+                    <div class="absolute top-1/4 left-1/4 animate-float">
+                        <i class="fas fa-cog text-[#D99D43]/20 text-2xl rotate-45"></i>
+                        <div class="absolute top-1/2 left-1/2 w-8 h-8 -translate-x-1/2 -translate-y-1/2 border border-[#D99D43]/10 rounded-full animate-ping"></div>
+                    </div>
+                    <div class="absolute top-1/3 right-1/4 animate-float-slow">
+                        <i class="fas fa-square text-[#D99D43]/20 text-xl rotate-12"></i>
+                        <div class="absolute top-1/2 left-1/2 w-6 h-6 -translate-x-1/2 -translate-y-1/2 border border-[#D99D43]/10 rounded-full animate-ping"></div>
+                    </div>
+                    <div class="absolute bottom-1/4 left-1/3 animate-float-slower">
+                        <i class="fas fa-circle text-[#D99D43]/20 text-lg"></i>
+                        <div class="absolute top-1/2 left-1/2 w-4 h-4 -translate-x-1/2 -translate-y-1/2 border border-[#D99D43]/10 rounded-full animate-ping"></div>
+                    </div>
+                </div>
+
+                <!-- Mobile Decorative Elements -->
+                <div class="md:hidden">
+                    <div class="absolute top-20 right-5 w-2 h-2 bg-[#D99D43] rounded-full animate-pulse"></div>
+                    <div class="absolute bottom-20 left-5 w-2 h-2 bg-[#D99D43] rounded-full animate-pulse delay-100"></div>
+                    <div class="absolute top-40 right-10 w-1 h-1 bg-[#D99D43] rounded-full animate-pulse delay-200"></div>
+                </div>
+            </div>
+
+            <div class="container mx-auto pt-[10%] px-6 relative">
+                <div class="max-w-4xl mx-auto text-center">
+                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-gray-900 leading-tight">
+                        Complete Business 
+                        <span class="relative">
+                            Solutions
+                            <span class="absolute -bottom-2 left-0 w-full h-1 bg-[#D99D43]/20"></span>
+                        </span>
+                    </h1>
+                    <p class="text-lg md:text-xl text-gray-600 mb-12 leading-relaxed max-w-2xl mx-auto">
+                        Your trusted partner for automotive, equipment, and property services across Asia. 
+                        We deliver excellence in every service we provide.
+                    </p>
+                    <div class="flex flex-col sm:flex-row justify-center gap-6">
+                        <button class="group bg-[#D99D43] hover:bg-[#c48b3c] text-white px-8 py-4 rounded-lg text-lg font-semibold transition-all duration-300">
+                            Explore Our Services
+                            <i class="fas fa-arrow-right ml-2 transform group-hover:translate-x-1 transition-transform"></i>
+                        </button>
+                        <button class="group bg-white border-2 border-[#D99D43] hover:border-[#c48b3c] text-gray-800 hover:text-[#D99D43] px-8 py-4 rounded-lg text-lg font-semibold transition-all duration-300">
+                            Contact Us
+                            <i class="fas fa-envelope ml-2 transform group-hover:scale-110 transition-transform"></i>
+                        </button>
+                    </div>
+
+                    <div class="mt-16 flex justify-center items-center space-x-4 text-gray-400">
+                        <div class="w-16 h-[1px] bg-gray-200"></div>
+                        <i class="fas fa-star-of-life text-sm rotate-45"></i>
+                        <div class="w-16 h-[1px] bg-gray-200"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-20 bg-gray-50">
+            <div class="container mx-auto px-6">
+                <!-- Section Header -->
+                <div class="text-center mb-16">
+                    <span class="text-[#D99D43] text-sm font-semibold tracking-wider uppercase">Our Expertise</span>
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mt-2 mb-4">Strategic Business Solutions</h2>
+                    <p class="text-gray-600 max-w-2xl mx-auto text-lg">Delivering comprehensive construction, property management, automotive, and equipment solutions with unparalleled expertise across Asia Pacific.</p>
+                </div>
+
+                <!-- Featured Services Showcase -->
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-16">
+                    <!-- Automotive Services -->
+                    <div class="relative group">
+                        <div class="absolute inset-0 bg-gradient-to-b from-transparent to-black/60 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                        <div class="bg-white rounded-2xl shadow-lg overflow-hidden transform group-hover:-translate-y-1 transition-transform duration-300">
+                            <div class="h-48 bg-gray-200 relative overflow-hidden">
+                                <div class="absolute inset-0 bg-[url('img/automotive-services.jpg')] bg-cover bg-center transform group-hover:scale-110 transition-transform duration-500"></div>
+                            </div>
+                            <div class="p-6">
+                                <div class="flex items-center mb-4">
+                                    <span class="w-12 h-12 bg-[#D99D43]/10 rounded-full flex items-center justify-center">
+                                        <i class="fas fa-car-side text-[#D99D43] text-xl"></i>
+                                    </span>
+                                    <h3 class="text-xl font-semibold ml-4">Automotive Services</h3>
+                                </div>
+                                <p class="text-gray-600 text-sm mb-4">Comprehensive automotive solutions tailored to meet your business and personal needs.</p>
+                                <ul class="space-y-3">
+                                    <li class="flex items-center text-gray-700">
+                                        <i class="fas fa-check-circle text-[#D99D43] mr-3"></i>
+                                        <span>Premium Fleet Management</span>
+                                    </li>
+                                    <li class="flex items-center text-gray-700">
+                                        <i class="fas fa-check-circle text-[#D99D43] mr-3"></i>
+                                        <span>Executive Transportation</span>
+                                    </li>
+                                    <li class="flex items-center text-gray-700">
+                                        <i class="fas fa-check-circle text-[#D99D43] mr-3"></i>
+                                        <span>Specialized Vehicle Solutions</span>
+                                    </li>
+                                </ul>
+                                <div class="mt-6 pt-4 border-t border-gray-100">
+                                    <a href="#automotive" class="inline-flex items-center text-[#D99D43] hover:text-[#c48b3c] font-medium">
+                                        Explore Services
+                                        <i class="fas fa-arrow-right ml-2 text-sm transition-transform group-hover:translate-x-1"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Equipment Solutions -->
+                    <div class="relative group">
+                        <div class="absolute inset-0 bg-gradient-to-b from-transparent to-black/60 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                        <div class="bg-white rounded-2xl shadow-lg overflow-hidden transform group-hover:-translate-y-1 transition-transform duration-300">
+                            <div class="h-48 bg-gray-200 relative overflow-hidden">
+                                <div class="absolute inset-0 bg-[url('img/equipment-solutions.jpg')] bg-cover bg-center transform group-hover:scale-110 transition-transform duration-500"></div>
+                            </div>
+                            <div class="p-6">
+                                <div class="flex items-center mb-4">
+                                    <span class="w-12 h-12 bg-[#D99D43]/10 rounded-full flex items-center justify-center">
+                                        <i class="fas fa-truck-monster text-[#D99D43] text-xl"></i>
+                                    </span>
+                                    <h3 class="text-xl font-semibold ml-4">Equipment Solutions</h3>
+                                </div>
+                                <p class="text-gray-600 text-sm mb-4">Industrial-grade equipment and machinery solutions for optimal operational efficiency.</p>
+                                <ul class="space-y-3">
+                                    <li class="flex items-center text-gray-700">
+                                        <i class="fas fa-check-circle text-[#D99D43] mr-3"></i>
+                                        <span>Heavy Equipment Leasing</span>
+                                    </li>
+                                    <li class="flex items-center text-gray-700">
+                                        <i class="fas fa-check-circle text-[#D99D43] mr-3"></i>
+                                        <span>Logistics & Transportation</span>
+                                    </li>
+                                    <li class="flex items-center text-gray-700">
+                                        <i class="fas fa-check-circle text-[#D99D43] mr-3"></i>
+                                        <span>Maintenance & Support</span>
+                                    </li>
+                                </ul>
+                                <div class="mt-6 pt-4 border-t border-gray-100">
+                                    <a href="#equipment" class="inline-flex items-center text-[#D99D43] hover:text-[#c48b3c] font-medium">
+                                        Explore Solutions
+                                        <i class="fas fa-arrow-right ml-2 text-sm transition-transform group-hover:translate-x-1"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Property Management -->
+                    <div class="relative group">
+                        <div class="absolute inset-0 bg-gradient-to-b from-transparent to-black/60 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                        <div class="bg-white rounded-2xl shadow-lg overflow-hidden transform group-hover:-translate-y-1 transition-transform duration-300">
+                            <div class="h-48 bg-gray-200 relative overflow-hidden">
+                                <div class="absolute inset-0 bg-[url('img/property-management.jpg')] bg-cover bg-center transform group-hover:scale-110 transition-transform duration-500"></div>
+                            </div>
+                            <div class="p-6">
+                                <div class="flex items-center mb-4">
+                                    <span class="w-12 h-12 bg-[#D99D43]/10 rounded-full flex items-center justify-center">
+                                        <i class="fas fa-building text-[#D99D43] text-xl"></i>
+                                    </span>
+                                    <h3 class="text-xl font-semibold ml-4">Property Management</h3>
+                                </div>
+                                <p class="text-gray-600 text-sm mb-4">End-to-end property solutions for commercial and residential developments.</p>
+                                <ul class="space-y-3">
+                                    <li class="flex items-center text-gray-700">
+                                        <i class="fas fa-check-circle text-[#D99D43] mr-3"></i>
+                                        <span>Asset Management</span>
+                                    </li>
+                                    <li class="flex items-center text-gray-700">
+                                        <i class="fas fa-check-circle text-[#D99D43] mr-3"></i>
+                                        <span>Facility Maintenance</span>
+                                    </li>
+                                    <li class="flex items-center text-gray-700">
+                                        <i class="fas fa-check-circle text-[#D99D43] mr-3"></i>
+                                        <span>Development Consulting</span>
+                                    </li>
+                                </ul>
+                                <div class="mt-6 pt-4 border-t border-gray-100">
+                                    <a href="#property" class="inline-flex items-center text-[#D99D43] hover:text-[#c48b3c] font-medium">
+                                        Explore Solutions
+                                        <i class="fas fa-arrow-right ml-2 text-sm transition-transform group-hover:translate-x-1"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Why Choose Us -->
+                <div class="bg-white rounded-xl shadow-sm p-6 mt-16">
+                    <div class="text-center mb-8">
+                        <span class="text-[#D99D43] text-xs font-medium tracking-wider uppercase">Why Choose Us</span>
+                        <h3 class="text-xl font-semibold text-gray-900 mt-1">The Penguin Asia Advantage</h3>
+                    </div>
+                    
+                    <div class="grid grid-cols-2 lg:grid-cols-4 gap-6">
+                        <div class="text-center">
+                            <div class="w-12 h-12 mx-auto bg-[#D99D43]/5 rounded-lg flex items-center justify-center group-hover:bg-[#D99D43]/10 transition-colors duration-300">
+                                <i class="fas fa-clock text-base text-[#D99D43]"></i>
+                            </div>
+                            <h4 class="text-sm font-medium text-gray-900 mt-3">24/7 Service</h4>
+                            <p class="text-xs text-gray-500 mt-1">Round-the-clock support</p>
+                        </div>
+                        
+                        <div class="text-center">
+                            <div class="w-12 h-12 mx-auto bg-[#D99D43]/5 rounded-lg flex items-center justify-center group-hover:bg-[#D99D43]/10 transition-colors duration-300">
+                                <i class="fas fa-shield-alt text-base text-[#D99D43]"></i>
+                            </div>
+                            <h4 class="text-sm font-medium text-gray-900 mt-3">Reliable</h4>
+                            <p class="text-xs text-gray-500 mt-1">Trusted across Asia</p>
+                        </div>
+                        
+                        <div class="text-center">
+                            <div class="w-12 h-12 mx-auto bg-[#D99D43]/5 rounded-lg flex items-center justify-center group-hover:bg-[#D99D43]/10 transition-colors duration-300">
+                                <i class="fas fa-tools text-base text-[#D99D43]"></i>
+                            </div>
+                            <h4 class="text-sm font-medium text-gray-900 mt-3">Professional</h4>
+                            <p class="text-xs text-gray-500 mt-1">Expert service delivery</p>
+                        </div>
+                        
+                        <div class="text-center">
+                            <div class="w-12 h-12 mx-auto bg-[#D99D43]/5 rounded-lg flex items-center justify-center group-hover:bg-[#D99D43]/10 transition-colors duration-300">
+                                <i class="fas fa-hand-holding-usd text-base text-[#D99D43]"></i>
+                            </div>
+                            <h4 class="text-sm font-medium text-gray-900 mt-3">Competitive</h4>
+                            <p class="text-xs text-gray-500 mt-1">Best value solutions</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
+    </main>
+    <script src="footer.js"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        handwriting: ['"Architects Daughter"', 'cursive'],
+                    },
+                    animation: {
+                        'pulse': 'pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                        'float': 'float 3s ease-in-out infinite',
+                        'float-slow': 'float 4s ease-in-out infinite',
+                        'float-slower': 'float 5s ease-in-out infinite',
+                        'spin-slow': 'spin 4s linear infinite',
+                    },
+                    keyframes: {
+                        pulse: {
+                            '0%, 100%': { opacity: '1' },
+                            '50%': { opacity: '0.5' },
+                        },
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        }
+                    },
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>
